@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--&lt;!&ndash; 이거 하는 이유는 애뮬레이터 통신을 위한것임 &ndash;&gt;-->
+<!--<network-security-config>-->
+
+<!--<domain-config cleartextTrafficPermitted="true">-->
+
+<!--    <domain includeSubdomains="true">openapi.naver.com/</domain>-->
+
+<!--</domain-config>-->
+
+<!--</network-security-config>-->
+
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
